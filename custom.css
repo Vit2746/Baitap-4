@@ -1,119 +1,68 @@
-/* ============================================
-   Diamond Health Club - Custom Stylesheet
-   ============================================ */
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    margin: 0;
-    padding: 20px;
-    background: #d8dce6;
-    color: #222;
-}
-
-.wrapper {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    font-size: 16px;
+    color: #000;
+    background: #fff;
     max-width: 900px;
     margin: 0 auto;
-    background: #fff;
-    border: 1px solid #8890a8;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    padding: 0 0 20px 0;
+    border: 1px solid #999;
 }
 
-/* Header image / logo */
-.map-img {
+img {
     display: block;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #8890a8;
 }
 
-/* Navigation bar */
-nav {
-    background: linear-gradient(to bottom, #eef1fa, #dde2f0);
-    padding: 8px 16px;
-    border-bottom: 1px solid #8890a8;
-    font-size: 0.95em;
-}
-
-nav a {
-    color: #1a3fa0;
-    text-decoration: none;
-    margin-right: 6px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    color: #0d2670;
-}
-
-nav .sep {
-    color: #8890a8;
-    margin-right: 6px;
-}
-
-/* Main content */
-main {
-    padding: 16px 28px 24px;
-}
-
-h1 {
-    color: #1a3fa0;
-    border-bottom: 2px solid #dde2f0;
-    padding-bottom: 6px;
-    margin-top: 0;
-}
-
-h2 {
-    color: #2a2a55;
-    margin-top: 28px;
-    border-left: 4px solid #1a3fa0;
-    padding-left: 10px;
-}
-
-p {
-    line-height: 1.6;
+/* Dòng menu: là <p> ngay sau thẻ </map> */
+map + p {
+    margin: 0;
+    padding: 6px 12px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    background: #fafafa;
 }
 
 a {
-    color: #1a3fa0;
+    color: #0000EE;
+    text-decoration: underline;
+}
+a:visited { color: #551A8B; }
+a:hover { color: #d0102a; }
+
+h1 {
+    padding: 0 12px;
+    margin: 18px 0 6px 0;
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
-a:hover {
-    color: #d0102a;
+h2 {
+    padding: 0 12px;
+    margin: 22px 0 6px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+p {
+    padding: 0 12px;
+    line-height: 1.5;
+    margin: 8px 0;
 }
 
 ul {
-    line-height: 1.7;
+    margin: 6px 0;
+    padding: 0 12px 0 36px;
+    line-height: 1.6;
 }
 
-ul li strong {
-    color: #1a3fa0;
+hr {
+    border: none;
+    border-top: 1px solid #999;
+    margin: 20px 12px 8px 12px;
 }
 
-/* Footer */
-footer {
-    padding: 12px 28px;
-    border-top: 1px solid #8890a8;
-    background: #f4f5fa;
-    font-size: 0.9em;
-}
-
-footer strong {
-    color: #1a3fa0;
-}
-
-footer .tagline {
-    font-style: italic;
-    color: #555;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-    body { padding: 8px; }
-    main { padding: 12px 16px; }
-    nav a { display: inline-block; margin-bottom: 4px; }
+hr + p {
+    padding: 0 12px;
+    margin: 0 0 12px 0;
+    font-size: 0.95em;
 }
